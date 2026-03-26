@@ -1,0 +1,15 @@
+🎨 Primary Color Codes
+
+#FF887D – Soft coral (primary / main accent)
+
+#FF7D7F – Warm rose (secondary / highlights)
+
+#FF957D – Peach tint (backgrounds / cards / hover states)
+
+✅ Suggested Usage (Best Practice)
+
+Primary buttons / key actions: #FF887D
+
+Secondary buttons / alerts / icons: #FF7D7F
+
+Cards, sections, soft UI backgrounds: #FF957D

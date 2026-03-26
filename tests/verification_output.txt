@@ -1,0 +1,91 @@
+Traceback (most recent call last):
+  File "/home/neetoosan/Documents/supportHub/tests/verify_pages_build.py", line 64, in run_verification
+    control = test_func()
+  File "/home/neetoosan/Documents/supportHub/tests/verify_pages_build.py", line 45, in <lambda>
+    ("Login Page", lambda: create_login_page(on_login=mock_callback, responsive=responsive)),
+                           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/neetoosan/Documents/supportHub/supporthub/ui/pages/login_page.py", line 68, in create_login_page
+    login_button = create_styled_button(
+        "Login to Dashboard",
+    ...<2 lines>...
+        button_type="primary",
+    )
+  File "/home/neetoosan/Documents/supportHub/supporthub/ui/components/styled_inputs.py", line 214, in create_styled_button
+    button = ft.Button(
+        text=text,
+    ...<10 lines>...
+        disabled=not enabled,
+    )
+TypeError: Button.__init__() got an unexpected keyword argument 'text'
+Traceback (most recent call last):
+  File "/home/neetoosan/Documents/supportHub/tests/verify_pages_build.py", line 64, in run_verification
+    control = test_func()
+  File "/home/neetoosan/Documents/supportHub/tests/verify_pages_build.py", line 54, in <lambda>
+    ("Reports Queue", lambda: create_reports_queue_page()),
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/neetoosan/Documents/supportHub/supporthub/ui/pages/reports_queue_page.py", line 131, in create_reports_queue_page
+    controls=[build_report_row(report) for report in reports],
+              ~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/home/neetoosan/Documents/supportHub/supporthub/ui/pages/reports_queue_page.py", line 76, in build_report_row
+    content=ft.LinearProgressIndicator(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/neetoosan/Documents/supportHub/.venv/lib/python3.13/site-packages/flet/__init__.py", line 1159, in __getattr__
+    raise AttributeError(f"module {__name__!r} has no attribute {name!r}")
+AttributeError: module 'flet' has no attribute 'LinearProgressIndicator'
+Traceback (most recent call last):
+  File "/home/neetoosan/Documents/supportHub/tests/verify_pages_build.py", line 64, in run_verification
+    control = test_func()
+  File "/home/neetoosan/Documents/supportHub/tests/verify_pages_build.py", line 56, in <lambda>
+    ("AI Insights", lambda: create_ai_insights_page()),
+                            ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/neetoosan/Documents/supportHub/supporthub/ui/pages/ai_insights_page.py", line 55, in create_ai_insights_page
+    build_classification_item(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        "Harassment", "92%", COLORS["critical"]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ),
+    ^
+  File "/home/neetoosan/Documents/supportHub/supporthub/ui/pages/ai_insights_page.py", line 20, in build_classification_item
+    content=ft.LinearProgressIndicator(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/neetoosan/Documents/supportHub/.venv/lib/python3.13/site-packages/flet/__init__.py", line 1159, in __getattr__
+    raise AttributeError(f"module {__name__!r} has no attribute {name!r}")
+AttributeError: module 'flet' has no attribute 'LinearProgressIndicator'
+Traceback (most recent call last):
+  File "/home/neetoosan/Documents/supportHub/tests/verify_pages_build.py", line 64, in run_verification
+    control = test_func()
+  File "/home/neetoosan/Documents/supportHub/tests/verify_pages_build.py", line 58, in <lambda>
+    ("Settings", lambda: create_settings_page()),
+                         ~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/neetoosan/Documents/supportHub/supporthub/ui/pages/settings_page.py", line 108, in create_settings_page
+    ft.ElevatedButton(
+    ~~~~~~~~~~~~~~~~~^
+        text="Save Settings",
+        ^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        color=ft.Colors.WHITE,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ),
+    ^
+  File "/home/neetoosan/Documents/supportHub/.venv/lib/python3.13/site-packages/flet/utils/deprecated.py", line 60, in new_init
+    orig_init(self, *args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Button.__init__() got an unexpected keyword argument 'text'
+Starting page verification...
+Testing Login Page... FAILED (Button.__init__() got an unexpected keyword argument 'text')
+Testing Dashboard Page... OK
+Testing Welcome Screen... OK
+Testing Who Are You Screen... OK
+Testing Admin Registration... OK
+Testing Reporter Report Form... OK
+Testing Reporter Evidence Screen... OK
+Testing Reporter Review Screen... OK
+Testing Reporter Confirmation... OK
+Testing Reports Queue... FAILED (module 'flet' has no attribute 'LinearProgressIndicator')
+Testing Report Detail... OK
+Testing AI Insights... FAILED (module 'flet' has no attribute 'LinearProgressIndicator')
+Testing Analytics... OK
+Testing Settings... FAILED (Button.__init__() got an unexpected keyword argument 'text')
+
+Verification Summary:
+4 TESTS FAILED.

@@ -1,0 +1,76 @@
+AI SupportHub is an AI-powered, anonymous harassment and abuse reporting platform designed to create safer environments in schools, workplaces, and community organizations. Many victims of harassment do not report incidents due to fear of retaliation, lack of trust in authorities, or power imbalances. AI SupportHub addresses this gap by providing a secure, confidential channel for reporting while using artificial intelligence to support fair, timely, and data-driven case handling.
+
+The primary target audience includes educational institutions, corporate organizations, NGOs, and community groups seeking reliable systems to manage harassment and abuse cases. Secondary users are individuals—students, employees, or community members—who need a safe and anonymous way to report incidents without risking exposure. The platform is especially impactful in environments where inequality, gender-based harassment, or systemic bias prevents open reporting.
+
+The system operates through a structured and transparent workflow. Reporters submit incidents anonymously via a mobile application, first selecting their organization, then providing written descriptions and optional supporting evidence such as images or audio. Each report is securely stored and passed through an AI processing pipeline. Natural Language Processing models analyze the text to classify the type of abuse and assign a severity score based on threat indicators, repetition, and contextual language. Pattern detection algorithms then compare reports to identify recurring offenders, locations, or behavioral trends.
+
+Administrators access a secure dashboard where reports are automatically prioritized using AI-generated insights, while maintaining human oversight for all decisions. Explainable AI features ensure transparency by showing why reports are flagged or ranked as high priority. The system emphasizes ethical AI usage by avoiding automated punishments and ensuring that all actions involve human review.
+
+AI SupportHub combines anonymity, intelligence, and accountability to reduce silence around harassment, promote equality, and support safer, more inclusive communities.
+
+
+Current Implementation Status:
+
+✅ COMPLETED FEATURES:
+- Reporter Flow: Welcome → Role Selection → Track or Report Choice → Organization Selection → Report Form → Evidence Upload → Review → Confirmation
+- Admin Flow: Login/Registration → Dashboard → Reports Queue → Report Details → AI Insights → Analytics → Settings
+- Responsive Design: Mobile-optimized reporter interface, desktop admin dashboard
+- Burger Menu Navigation: Mobile-friendly admin navigation
+- Organization-Based Reporting: All reports require organization selection
+- Anonymous Tracking: Reporters can track incident status with tracking ID
+
+🚧 IN PROGRESS / TODO:
+- Database Integration: Reports currently not persisting to database
+- AI Processing: NLP classifier, severity scoring, pattern detection (modules exist but not connected)
+- Evidence Storage: File upload and retrieval system
+- Authentication: Firebase integration partial
+- Testing Suite: Placeholder tests need implementation
+
+
+Screen Details:
+
+👤 REPORTER (Anonymous User)
+Minimal interface for safety and ease of use.
+
+1. Welcome / Safety Notice Screen ✅
+2. Role Selection (Reporter or Admin) ✅
+3. Track or Report Choice ✅ NEW
+   - Track an Incident → Enter tracking ID
+   - Report New Incident → Continue to form
+4. Anonymous Report Form ✅ (with Organization Selection)
+5. Evidence Upload Screen ✅
+6. Report Review & Submit ✅
+7. Submission Confirmation ✅
+8. Report Status Tracking ✅
+
+👉 Total (Reporter): 8 screens - ALL IMPLEMENTED
+
+
+🧑‍💼 ADMIN / MODERATOR (Flet Dashboard)
+Desktop interface with comprehensive case management.
+
+1. Login / Auth Screen ✅
+2. Organization Registration ✅
+3. Dashboard Overview ✅
+4. Reports Queue (AI-ranked) ✅
+5. Report Detail View ✅
+6. Evidence Viewer (partial - UI ready, storage TODO)
+7. AI Insights Panel ✅
+8. Case Action & Notes (partial - UI ready, persistence TODO)
+9. Analytics & Trends ✅
+10. System Settings ✅
+11. Audit Logs (TODO)
+12. Notifications Center (TODO)
+13. User & Role Management (TODO)
+
+👉 Total (Admin): 10/13 screens implemented
+
+
+📊 ANALYST:
+Advanced analytics role (can be merged with Admin for MVP).
+
+1. Advanced Analytics (merged with main Analytics)
+2. Export & Reporting (TODO)
+3. Bias & Fairness Monitoring (TODO)
+
+👉 Total (Analyst): 0/3 screens - DEFERRED FOR MVP

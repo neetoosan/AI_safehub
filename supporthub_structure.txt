@@ -1,0 +1,89 @@
+supporthub/
+│
+├── app/
+│   ├── main.py                  # App entry point
+│   ├── routes.py                # Navigation & routing
+│   ├── app_state.py             # Global app state
+│
+├── config/
+│   ├── settings.py              # Env configs
+│   ├── firebase.py              # Firebase setup
+│   ├── security.py              # Tokens, encryption
+│
+├── auth/
+│   ├── login.py
+│   ├── permissions.py
+│   ├── session_manager.py
+│
+├── models/                      # SQLAlchemy models
+│   ├── base.py
+│   ├── user.py
+│   ├── report.py
+│   ├── evidence.py
+│   ├── ai_result.py
+│   ├── audit_log.py
+│
+├── database/
+│   ├── engine.py
+│   ├── session.py
+│   ├── migrations/
+│
+├── services/                    # Business logic
+│   ├── report_service.py
+│   ├── evidence_service.py
+│   ├── notification_service.py
+│   ├── analytics_service.py
+│
+├── ai/
+│   ├── nlp_classifier.py
+│   ├── severity_scoring.py
+│   ├── pattern_detection.py
+│   ├── explainability.py
+│   ├── model_loader.py
+│
+├── api/                         # Backend API layer
+│   ├── routes/
+│   │   ├── reports.py
+│   │   ├── analytics.py
+│   │   ├── admin.py
+│   ├── schemas.py
+│   ├── dependencies.py
+│
+├── ui/                          # Flet UI (important)
+│   ├── layouts/
+│   │   ├── base_layout.py
+│   │   ├── sidebar.py
+│   │   ├── header.py
+│   │
+│   ├── pages/
+│   │   ├── login_page.py
+│   │   ├── dashboard_page.py
+│   │   ├── reports_list_page.py
+│   │   ├── report_detail_page.py
+│   │   ├── ai_insights_page.py
+│   │   ├── analytics_page.py
+│   │   ├── settings_page.py
+│   │
+│   ├── components/
+│   │   ├── report_card.py
+│   │   ├── evidence_viewer.py
+│   │   ├── charts.py
+│   │   ├── severity_badge.py
+│
+├── utils/
+│   ├── validators.py
+│   ├── helpers.py
+│   ├── constants.py
+│
+├── logs/
+│   ├── app.log
+│
+├── tests/
+│   ├── test_ai.py
+│   ├── test_reports.py
+│   ├── test_security.py
+│
+├── requirements.txt
+├── README.md
+└── .env
+
