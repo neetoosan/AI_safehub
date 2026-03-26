@@ -1,1 +1,48 @@
 
+# Web Framework & API
+flask
+fastapi
+uvicorn
+
+# Database
+sqlalchemy
+alembic
+psycopg2-binary
+
+# Security & Authentication
+python-jwt
+passlib
+cryptography
+
+# UI Framework
+flet
+
+# AI & NLP - Using Open Source APIs (No training needed)
+huggingface-hub
+requests
+
+# File handling & Processing
+python-multipart
+pillow
+pydub
+
+# Environment & Config
+python-dotenv
+pydantic
+
+# Utilities
+requests
+aiofiles
+email-validator
+
+# Development & Testing
+pytest
+pytest-asyncio
+pytest-cov
+black
+flake8
+# Logging & Monitoring
+python-logging-loki
+
+# Firebase
+firebase-admin
